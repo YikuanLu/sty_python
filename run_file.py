@@ -10,12 +10,15 @@
 # print(list(q))
 
 # 找出几个最大/最小值
-from heapq import nlargest, nsmallest
+from heapq import nlargest, nsmallest, heapify
 
 nums = [1, 2, 4, 7, 8, 45, -6]
 
-maxs = nlargest(3, nums)
-print(maxs)
+# maxs = nlargest(3, nums)
+# print(maxs)
 
-mins = nsmallest(3, nums)
-print(mins)
+# mins = nsmallest(3, nums)
+# print(mins)
+
+heapify(nums)
+print(nums)
